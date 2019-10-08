@@ -7,8 +7,9 @@ using System.Configuration;
 
 namespace FixerIOTest
 {
-    class FixerConfig
+    public static class FixerConfig
     {
+        public static readonly string BaseUrl = ConfigurationManager.AppSettings.Get("base_url");
 
     }
 }
