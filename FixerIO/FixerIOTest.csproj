@@ -56,7 +56,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FixerConfig.cs" />
     <Compile Include="Fixer_Latest_Rates_Service\Data_Handling\FixerLatestDTO.cs" />
+    <Compile Include="Fixer_Latest_Rates_Service\Data_Handling\LatestRatesModel.cs" />
     <Compile Include="Fixer_Latest_Rates_Service\FixerLatestRatesService.cs" />
     <Compile Include="Fixer_Latest_Rates_Service\HTTP_Manager\FixerLatestCallManager.cs" />
     <Compile Include="Tests\FixerLatestRateTest.cs" />
