@@ -24,8 +24,17 @@ namespace FixerIOTest.Fixer_Latest_Rates_Service
         public FixerLatestRatesService()
         {
             fixerLatestDTO.DeserializeLatestRates(fixerLatestCallManager.GetLatestRates());
-            //LatestRatesJson = JObject.Parse(fixerLatestCallManager.GetLatestRates());
+            LatestRatesJson = JObject.Parse(fixerLatestCallManager.GetLatestRates());
+        }
 
+        public int GetTotalRate()
+        {
+            int count = 0;
+            foreach (var item in LatestRatesJson["rates"])
+            {
+                count++;
+            }
+            return count;
         }
     }
 }
