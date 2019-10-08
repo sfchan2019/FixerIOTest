@@ -8,6 +8,6 @@ namespace FixerIOTest.Fixer_Latest_Rates_Service.Data_Handling
 {
     public class FixerLatestDTO
     {
-
+        public LatestRatesRoot latestRatesRoot { get; set; }
     }
 }
